@@ -16,6 +16,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.roto.industrial.account.LoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="登录"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="login"
+                    android:scheme="industrial" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

@@ -1,0 +1,26 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="SingleLineWithPadding">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/single_line_height</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/table_item_padding</item>
+        <item name="android:paddingRight">@dimen/table_item_padding</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="WrapTextStyle" parent="android:Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ListBlackText" parent="WrapTextStyle">
+        <item name="android:textColor">@color/text_color_black</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+    </style>
+    <style name="WeightButton" parent="android:Widget.Button">
+        <item name="android:layout_height">45dip</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/btn_blue</item>
+        <item name="android:textColor">@color/text_color_white</item>
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+</resources>

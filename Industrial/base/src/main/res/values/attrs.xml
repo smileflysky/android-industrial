@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="NavigationDot">
+        <attr name="navigationDotSelected" format="reference" />
+        <attr name="navigationDotUnselected" format="reference" />
+        <attr name="navigationDotCount" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="TableView">
+        <attr format="reference" name="dividernova"/>
+        <attr format="reference" name="group_divider"/>
+    </declare-styleable>
+
+</resources>

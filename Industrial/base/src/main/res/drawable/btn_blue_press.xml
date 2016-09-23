@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+    I know the android:radius is useless here but it's needed to fix an old bug:
+    http://code.google.com/p/android/issues/detail?id=939
+    -->
+
+    <stroke
+        android:width="1.0px"
+        android:color="#303F9F" />
+
+    <solid android:color="#303F9F" />
+
+    <corners android:radius="3dp" />
+
+</shape><!-- From: file:/Users/liquanmin/Documents/BigFootprint/Work/Nova-AS/AnroidNovaMerchant/android-nova-merchant/DPPullToRefresh/src/main/res/drawable/btn_blue_press.xml --><!-- From: file:/Users/liquanmin/Documents/BigFootprint/Work/Nova-AS/AnroidNovaMerchant/android-nova-merchant/DPPullToRefresh/build/intermediates/bundles/debug/res/drawable/btn_blue_press.xml -->

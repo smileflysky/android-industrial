@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.roto.base.widget.BaseLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.roto.base.widget.TableView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <com.roto.base.widget.BaseLinearLayout
+            style="@style/SingleLineWithPadding"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.roto.base.widget.BaseTextView
+                style="@style/ListBlackText"
+                android:layout_marginRight="15dp"
+                android:text="账号" />
+
+            <com.roto.base.widget.ClearEditText
+                android:id="@+id/username"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入账号/手机号"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_18" />
+
+            <com.roto.base.widget.BaseLinearLayout
+                android:id="@+id/username_history"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/more_gray" />
+
+                <com.roto.base.widget.BaseImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_arrow_down_black" />
+            </com.roto.base.widget.BaseLinearLayout>
+        </com.roto.base.widget.BaseLinearLayout>
+
+        <com.roto.base.widget.BaseLinearLayout
+            style="@style/SingleLineWithPadding"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.roto.base.widget.BaseTextView
+                style="@style/ListBlackText"
+                android:layout_marginRight="15dp"
+                android:text="密码" />
+
+            <com.roto.base.widget.ClearEditText
+                android:id="@+id/pwd"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入您的密码"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/text_size_18" />
+        </com.roto.base.widget.BaseLinearLayout>
+    </com.roto.base.widget.TableView>
+    <com.roto.base.widget.BaseButton
+        android:id="@+id/login_btn"
+        style="@style/WeightButton"
+        android:layout_margin="15dp"
+        android:text="登录" />
+</com.roto.base.widget.BaseLinearLayout>
